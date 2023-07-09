@@ -32,8 +32,8 @@ const dbUrl=process.env.DB_URL;
 
 
 
-mongoose.connect('mongodb://127.0.0.1:27017/Yelpcamp')
-// mongoose.connect(dbUrl)
+// mongoose.connect('mongodb://127.0.0.1:27017/Yelpcamp')
+mongoose.connect(dbUrl)
 .then(()=>{
     console.log("CONNECTION OPEN")
 })
