@@ -27,7 +27,7 @@ const reviewsRoutes = require('./routes/reviews');   // for review route
 const { StringDecoder } = require('string_decoder');
 
 
-const dbUrl=process.env.DB_URL;
+const dbUrl=process.env.DB_URL || 'mongodb://127.0.0.1:27017/Yelpcamp';
 
 
 
